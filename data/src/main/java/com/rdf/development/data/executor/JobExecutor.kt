@@ -1,10 +1,11 @@
 package com.rdf.development.data.executor
 
+import com.rdf.development.domain.executor.ThreadExecutor
 import java.util.concurrent.*
 import javax.inject.Inject
 
 
-class JobExecutor @Inject constructor() {
+class JobExecutor @Inject constructor(): ThreadExecutor {
 
     val threadPoolExecutor: ThreadPoolExecutor
 
@@ -20,7 +21,7 @@ class JobExecutor @Inject constructor() {
         )
     }
 
-    fun execute(runnable: Runnable) {
+    override fun execute(runnable: Runnable) {
         this.threadPoolExecutor.execute(runnable)
     }
 

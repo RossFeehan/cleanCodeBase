@@ -26,6 +26,8 @@ kapt {
 }
 
 dependencies {
+
+    implementation project(':domain')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'javax.inject:javax.inject:1'
