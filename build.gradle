@@ -5,7 +5,10 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+        mavenCentral()
+        maven{
+            url "https://plugins.gradle.org/m2/"
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.0'
@@ -15,10 +18,43 @@ buildscript {
     }
 }
 
+ext {
+    // Dependencies
+    supportLibraryVersion = '1.0.0-beta01'
+    supportLibraryRecyclerViewVersion = '1.1.0-alpha04'
+    supportLibraryMaterialVersion = '1.1.0-alpha05'
+    supportLibraryAppCompatVersion = '1.1.0-alpha04'
+    constraintLayoutVersion = '2.0.0-alpha5'
+    autoVersion = '1.0-rc4'
+    playServicesAnalyticsVersion = '16.0.8'
+    playServicesVersion = '16.0.0'
+    playServicesGcmVersion = '16.1.0'
+
+    retrofitVersion = '2.5.0'
+    okHttpVersion = '3.14.1'
+
+    rxJavaVersion = '2.2.8'
+    rxKotlinVersion = '2.3.0'
+    rxAndroidVersion = '2.1.1'
+
+    daggerVersion = '2.22.1'
+    multidexVersion = '2.0.1'
+
+    gsonVersion = '2.8.5'
+
+    // Test Dependencies
+    junitVersion = '4.13-beta-2'
+    mockitoKotlinVersion = '1.6.0'
+    assertJVersion = '3.8.0'
+    assertJAndroidVersion = '1.2.0'
+}
+
+
 allprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()
         
     }
 }
