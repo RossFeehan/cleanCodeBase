@@ -47,6 +47,7 @@ ext {
     mockitoKotlinVersion = '1.6.0'
     assertJVersion = '3.8.0'
     assertJAndroidVersion = '1.2.0'
+    androidXTestVersion = '1.2.0-alpha04'
 }
 
 
