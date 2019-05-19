@@ -1,4 +1,4 @@
-package com.rdf.development.domain.useCase
+package com.rdf.development.domain.useCase.base
 
 import io.reactivex.Maybe
 

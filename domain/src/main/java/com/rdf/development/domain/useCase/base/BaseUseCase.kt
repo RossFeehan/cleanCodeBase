@@ -1,4 +1,4 @@
-package com.rdf.development.domain.useCase
+package com.rdf.development.domain.useCase.base
 
 import com.rdf.development.domain.transformer.SchedulerTransformer
 import io.reactivex.Completable
