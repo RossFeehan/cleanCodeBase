@@ -8,7 +8,7 @@ import io.reactivex.Single
 import javax.inject.Inject
 
 
-class BaseUseCase {
+abstract class BaseUseCase {
 
     private lateinit var schedulerTransformer: SchedulerTransformer
     private lateinit var debugTransformer: SchedulerTransformer
