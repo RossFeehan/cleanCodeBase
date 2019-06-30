@@ -19,6 +19,7 @@ class NetworkingModule {
     @Provides
     fun provideRetrofit(gson: Gson, okHttpClient: OkHttpClient): Retrofit = Retrofit.Builder()
         .addConverterFactory(GsonConverterFactory.create(gson))
+        .baseUrl("https://cat-fact.herokuapp.com")
         .client(okHttpClient)
         .build()
 
