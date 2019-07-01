@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import dagger.android.AndroidInjection
 
 
-class BaseActivity: AppCompatActivity(), BaseContract.BaseView {
+abstract class BaseActivity: AppCompatActivity(), BaseContract.BaseView {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidInjection.inject(this)
