@@ -1,4 +1,4 @@
-package com.rdf.development.cleancodebase.feature
+package com.rdf.development.cleancodebase.feature.getCatFact
 
 import android.os.Bundle
 import android.view.Menu
@@ -8,7 +8,7 @@ import com.rdf.development.cleancodebase.R
 import com.rdf.development.cleancodebase.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : BaseActivity() {
+class CatFactActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
