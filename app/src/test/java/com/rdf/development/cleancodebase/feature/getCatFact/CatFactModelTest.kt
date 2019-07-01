@@ -5,7 +5,6 @@ import com.nhaarman.mockito_kotlin.verify
 import com.rdf.development.domain.useCase.feature.GetCatFactUseCase
 import org.junit.Test
 
-
 class CatFactModelTest {
 
     private val getCatFactUseCase: GetCatFactUseCase = mock()
