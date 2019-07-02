@@ -1,11 +1,9 @@
 package com.rdf.development.cleancodebase.feature.getCatFact
 
-import com.nhaarman.mockito_kotlin.anyVararg
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
 import com.nhaarman.mockito_kotlin.whenever
 import com.rdf.development.domain.model.CatFact
-import com.rdf.development.domain.model.Fact
 import io.reactivex.Single
 import org.junit.Before
 import org.junit.Rule
@@ -23,12 +21,7 @@ class CatFactPresenterTest {
 
     private val view: GetCatFactContract.View = mock()
 
-    private val fact = Fact("id", "fact")
-    private val factList = mutableListOf(fact)
-    private val catFact = CatFact(factList)
-
-    private val emptyFactList = mutableListOf<Fact>()
-    private val emptyCatFact = CatFact(emptyFactList)
+    private val catFact = CatFact("id", "fact")
 
     @Before
     fun setup(){
@@ -48,6 +41,6 @@ class CatFactPresenterTest {
         //WHEN
         presenter.takeView(view)
         //THEN
-        verify(view).displayCatFact(fact)
+        verify(view).displayCatFact(catFact)
     }
 }

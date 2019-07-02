@@ -6,7 +6,7 @@ import android.view.MenuItem
 import android.widget.Toast
 import com.rdf.development.cleancodebase.R
 import com.rdf.development.cleancodebase.base.BaseActivity
-import com.rdf.development.domain.model.Fact
+import com.rdf.development.domain.model.CatFact
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 import javax.inject.Inject
@@ -28,7 +28,7 @@ class CatFactActivity : BaseActivity(), GetCatFactContract.View {
         }
     }
 
-    override fun displayCatFact(fact: Fact) {
+    override fun displayCatFact(fact: CatFact) {
         catFactTextView.text = fact.fact
     }
 
