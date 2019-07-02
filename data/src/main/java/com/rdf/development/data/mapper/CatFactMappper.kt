@@ -12,7 +12,7 @@ class CatFactMappper {
 
         fun dataCatFactToDomain(dataCatFact: DataCatFact): CatFact{
             val facts = mutableListOf<Fact>()
-            if(dataCatFact.dataFacts != null){
+            if(dataCatFact.dataFacts.isNotEmpty()){
                 for(fact in dataCatFact.dataFacts){
                     mapDataFactToDomain(fact)?.let { facts.add(it) }
                 }

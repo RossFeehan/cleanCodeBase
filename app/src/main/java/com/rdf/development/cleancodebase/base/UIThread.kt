@@ -1,4 +1,4 @@
-package com.rdf.development.cleancodebase.application
+package com.rdf.development.cleancodebase.base
 
 import com.rdf.development.domain.executor.PostExecutionThread
 import io.reactivex.Scheduler

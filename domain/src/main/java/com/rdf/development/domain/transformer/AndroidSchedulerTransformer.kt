@@ -7,7 +7,7 @@ import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
 
-class AndoridSchedulerTransformer @Inject
+class AndroidSchedulerTransformer @Inject
 constructor(threadExecutor: ThreadExecutor, postExecutionThread: PostExecutionThread) : SchedulerTransformer {
 
     private val subscribeScheduler: Scheduler

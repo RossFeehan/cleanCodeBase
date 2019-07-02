@@ -7,6 +7,6 @@ import retrofit2.http.GET
 
 interface CatApi {
 
-    @GET("/dataFacts/random")
+    @GET("/facts/random")
     fun getCatFact(): Single<DataCatFact>
 }

@@ -50,16 +50,4 @@ class CatFactPresenterTest {
         //THEN
         verify(view).displayCatFact(fact)
     }
-
-   /* //TODO WHEN SUCCESSFULLY GET CAT FACT AND FACT IS NOT AVAILABLE THEN DISPLAY ERROR MESSAGE IN VIEW
-    @Test
-    fun when_successfullyGetCatFact_and_noFact_then_displayErrorInView(){
-        //GIVEN
-        whenever(catFactModel.getCatFact()).thenReturn(Single.just(emptyCatFact))
-
-        //WHEN
-        presenter.takeView(view)
-        //THEN
-        verify(view).displayErrorMessage(anyVararg<Int>())
-    }*/
 }
