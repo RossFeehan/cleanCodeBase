@@ -14,7 +14,7 @@ import javax.inject.Inject
 class CatFactActivity : BaseActivity(), CatFactContract.View {
 
     @Inject
-    lateinit var presenter: CatFactPresenter
+    lateinit var presenter: CatFactContract.Presenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
