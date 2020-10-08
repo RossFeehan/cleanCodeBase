@@ -1,6 +1,6 @@
 package com.rdf.development.domain.useCase.base
 
-import com.rdf.development.domain.transformer.SchedulerTransformer
+import com.rdf.development.domain.base.transformer.SchedulerTransformer
 import io.reactivex.Completable
 import io.reactivex.Maybe
 import io.reactivex.Observable

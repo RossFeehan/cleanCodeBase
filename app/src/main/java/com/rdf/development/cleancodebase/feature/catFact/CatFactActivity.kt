@@ -1,4 +1,4 @@
-package com.rdf.development.cleancodebase.feature.getCatFact
+package com.rdf.development.cleancodebase.feature.catFact
 
 import android.os.Bundle
 import android.view.Menu
@@ -6,12 +6,12 @@ import android.view.MenuItem
 import android.widget.Toast
 import com.rdf.development.cleancodebase.R
 import com.rdf.development.cleancodebase.base.BaseActivity
-import com.rdf.development.domain.model.CatFact
+import com.rdf.development.domain.models.CatFact
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 import javax.inject.Inject
 
-class CatFactActivity : BaseActivity(), GetCatFactContract.View {
+class CatFactActivity : BaseActivity(), CatFactContract.View {
 
     @Inject
     lateinit var presenter: CatFactPresenter

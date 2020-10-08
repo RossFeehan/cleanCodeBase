@@ -1,7 +1,7 @@
-package com.rdf.development.domain.transformer
+package com.rdf.development.domain.base.transformer
 
-import com.rdf.development.domain.executor.PostExecutionThread
-import com.rdf.development.domain.executor.ThreadExecutor
+import com.rdf.development.domain.base.executor.PostExecutionThread
+import com.rdf.development.domain.base.executor.ThreadExecutor
 import io.reactivex.*
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject

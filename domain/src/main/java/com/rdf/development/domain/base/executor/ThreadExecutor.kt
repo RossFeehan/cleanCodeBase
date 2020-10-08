@@ -1,4 +1,4 @@
-package com.rdf.development.domain.executor
+package com.rdf.development.domain.base.executor
 
 import java.util.concurrent.Executor
 

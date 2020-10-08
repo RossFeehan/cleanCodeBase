@@ -1,8 +1,8 @@
 package com.rdf.development.data.di
 
-import com.rdf.development.data.networking.DataCatFactRepository
+import com.rdf.development.data.repository.DataCatFactRepository
 import com.rdf.development.data.networking.api.CatApi
-import com.rdf.development.domain.repository.CatFactRepository
+import com.rdf.development.domain.contracts.repository.CatFactRepository
 import dagger.Module
 import dagger.Provides
 
@@ -10,5 +10,6 @@ import dagger.Provides
 class RepositoryModule {
 
     @Provides
-    fun provideCatFactRepository(catApi: CatApi): CatFactRepository = DataCatFactRepository(catApi)
+    fun provideCatFactRepository(catApi: CatApi): CatFactRepository =
+        DataCatFactRepository(catApi)
 }

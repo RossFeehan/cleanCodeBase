@@ -1,9 +1,9 @@
-package com.rdf.development.data.networking
+package com.rdf.development.data.repository
 
 import com.rdf.development.data.mapper.CatFactMappper
 import com.rdf.development.data.networking.api.CatApi
-import com.rdf.development.domain.model.CatFact
-import com.rdf.development.domain.repository.CatFactRepository
+import com.rdf.development.domain.models.CatFact
+import com.rdf.development.domain.contracts.repository.CatFactRepository
 import io.reactivex.Single
 
 class DataCatFactRepository constructor(private val catApi: CatApi): CatFactRepository {

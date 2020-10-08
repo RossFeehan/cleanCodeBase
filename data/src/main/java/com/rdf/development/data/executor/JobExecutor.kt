@@ -1,6 +1,6 @@
 package com.rdf.development.data.executor
 
-import com.rdf.development.domain.executor.ThreadExecutor
+import com.rdf.development.domain.base.executor.ThreadExecutor
 import java.util.concurrent.*
 import javax.inject.Inject
 

@@ -1,6 +1,6 @@
 package com.rdf.development.cleancodebase.base
 
-import com.rdf.development.domain.executor.PostExecutionThread
+import com.rdf.development.domain.base.executor.PostExecutionThread
 import io.reactivex.Scheduler
 import io.reactivex.android.schedulers.AndroidSchedulers
 import javax.inject.Inject

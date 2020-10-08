@@ -1,9 +1,9 @@
-package com.rdf.development.cleancodebase.feature.getCatFact
+package com.rdf.development.cleancodebase.feature.catFact
 
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
 import com.nhaarman.mockito_kotlin.whenever
-import com.rdf.development.domain.model.CatFact
+import com.rdf.development.domain.models.CatFact
 import io.reactivex.Single
 import org.junit.Before
 import org.junit.Rule
@@ -15,11 +15,11 @@ class CatFactPresenterTest {
     @get:Rule
     var rule = RxSchedulersRule()
 
-    private val catFactModel: CatFactModel = mock()
+    private val catFactModel: CatFactViewModel = mock()
 
     private val presenter = CatFactPresenter(catFactModel)
 
-    private val view: GetCatFactContract.View = mock()
+    private val view: CatFactContract.View = mock()
 
     private val catFact = CatFact("id", "fact")
 

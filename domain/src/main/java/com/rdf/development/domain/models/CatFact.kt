@@ -1,4 +1,4 @@
-package com.rdf.development.domain.model
+package com.rdf.development.domain.models
 
 
 data class CatFact(val id: String,

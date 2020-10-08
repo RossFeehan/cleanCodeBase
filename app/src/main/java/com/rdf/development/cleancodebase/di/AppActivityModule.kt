@@ -1,7 +1,7 @@
 package com.rdf.development.cleancodebase.di
 
 import com.rdf.development.cleancodebase.di.annotations.ActivityScope
-import com.rdf.development.cleancodebase.feature.getCatFact.CatFactActivity
+import com.rdf.development.cleancodebase.feature.catFact.CatFactActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

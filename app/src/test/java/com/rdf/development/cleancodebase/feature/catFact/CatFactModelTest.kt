@@ -1,4 +1,4 @@
-package com.rdf.development.cleancodebase.feature.getCatFact
+package com.rdf.development.cleancodebase.feature.catFact
 
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
@@ -9,7 +9,7 @@ class CatFactModelTest {
 
     private val getCatFactUseCase: GetCatFactUseCase = mock()
 
-    private val model = CatFactModel(getCatFactUseCase)
+    private val model = CatFactViewModel(getCatFactUseCase)
 
     @Test
     fun when_getCatFactModelCalled_then_callCorrectUseCase(){

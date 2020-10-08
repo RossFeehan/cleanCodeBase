@@ -1,7 +1,6 @@
 package com.rdf.development.data.di
 
 import com.rdf.development.data.networking.api.CatApi
-import com.rdf.development.data.networking.DataCatFactRepository
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
