@@ -3,7 +3,7 @@ package com.rdf.development.data.mapper
 import com.rdf.development.data.model.DataCatFact
 import com.rdf.development.domain.models.CatFact
 
-class CatFactMappper {
+class DataCatFactMappper {
 
     companion object {
 
