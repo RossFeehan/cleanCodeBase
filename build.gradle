@@ -27,21 +27,18 @@ ext {
     supportLibraryAnnotationVersion = '1.1.0'
     constraintLayoutVersion = '2.0.2'
     autoVersion = '1.0-rc4'
-    //playServicesAnalyticsVersion = '16.0.8'
-    //playServicesVersion = '16.0.0'
-    //playServicesGcmVersion = '16.1.0'
+    multidexVersion = '2.0.1'
 
-    retrofitVersion = '2.5.0'
-    okHttpVersion = '3.14.1'
+    retrofitVersion = '2.9.0'
+    okHttpVersion = '4.9.0'
 
     rxJavaVersion = '2.2.8'
     rxKotlinVersion = '2.3.0'
     rxAndroidVersion = '2.1.1'
 
-    daggerVersion = '2.22.1'
-    multidexVersion = '2.0.1'
+    daggerVersion = '2.29.1'
 
-    gsonVersion = '2.8.5'
+    gsonVersion = '2.8.6'
 
     // Test Dependencies
     junitVersion = '4.13-beta-2'
